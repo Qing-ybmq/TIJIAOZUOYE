@@ -1,0 +1,22 @@
+--cpu Cortex-M3
+"diankonzuoye\startup_stm32f103xb.o"
+"diankonzuoye\main.o"
+"diankonzuoye\gpio.o"
+"diankonzuoye\stm32f1xx_it.o"
+"diankonzuoye\stm32f1xx_hal_msp.o"
+"diankonzuoye\stm32f1xx_hal_gpio_ex.o"
+"diankonzuoye\stm32f1xx_hal.o"
+"diankonzuoye\stm32f1xx_hal_rcc.o"
+"diankonzuoye\stm32f1xx_hal_rcc_ex.o"
+"diankonzuoye\stm32f1xx_hal_gpio.o"
+"diankonzuoye\stm32f1xx_hal_dma.o"
+"diankonzuoye\stm32f1xx_hal_cortex.o"
+"diankonzuoye\stm32f1xx_hal_pwr.o"
+"diankonzuoye\stm32f1xx_hal_flash.o"
+"diankonzuoye\stm32f1xx_hal_flash_ex.o"
+"diankonzuoye\stm32f1xx_hal_exti.o"
+"diankonzuoye\system_stm32f1xx.o"
+--strict --scatter "diankonzuoye\diankonzuoye.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "diankonzuoye.map" -o diankonzuoye\diankonzuoye.axf
